@@ -9,24 +9,9 @@ export default class Dashboard extends Component {
         this.state = {
             data: null,
             options: [
-                { key: 'angular', text: 'Angular', value: 'angular' },
-                { key: 'css', text: 'CSS', value: 'css' },
-                { key: 'design', text: 'Graphic Design', value: 'design' },
-                { key: 'ember', text: 'Ember', value: 'ember' },
-                { key: 'html', text: 'HTML', value: 'html' },
-                { key: 'ia', text: 'Information Architecture', value: 'ia' },
-                { key: 'javascript', text: 'Javascript', value: 'javascript' },
-                { key: 'mech', text: 'Mechanical Engineering', value: 'mech' },
-                { key: 'meteor', text: 'Meteor', value: 'meteor' },
-                { key: 'node', text: 'NodeJS', value: 'node' },
-                { key: 'plumbing', text: 'Plumbing', value: 'plumbing' },
-                { key: 'python', text: 'Python', value: 'python' },
-                { key: 'rails', text: 'Rails', value: 'rails' },
-                { key: 'react', text: 'React', value: 'react' },
-                { key: 'repair', text: 'Kitchen Repair', value: 'repair' },
-                { key: 'ruby', text: 'Ruby', value: 'ruby' },
-                { key: 'ui', text: 'UI Design', value: 'ui' },
-                { key: 'ux', text: 'User Experience', value: 'ux' },
+                { key: 'Creation time', text: 'Creation time', value: 'Creation time' },
+                { key: 'Status', text: 'Status', value: 'Status' },
+                { key: 'Priority', text: 'Priority', value: 'Priority' },
             ],
         }
     }
@@ -59,17 +44,17 @@ export default class Dashboard extends Component {
                         <Table.Row positive>
                             <Table.Cell>
                                 <Header as='h4' image>
-                                    <Image src='https://react.semantic-ui.com/images/avatar/small/lena.png' rounded size='mini' />
+                                    <Icon name='fire extinguisher' />
                                     <Header.Content>
-                                        Lena
-              <Header.Subheader>Human Resources</Header.Subheader>
+                                        Paloturvariski Finlandia talolla
+              <Header.Subheader>Vanhentuneet palosammuttimet</Header.Subheader>
                                     </Header.Content>
                                 </Header>
                             </Table.Cell>
                             <Table.Cell>
-                                22
+                            Vanhentuneet palosammuttimet aiheuttavat turvavaaran
                             </Table.Cell>
-                            <Table.Cell>22</Table.Cell>
+                            <Table.Cell>16.07.2018</Table.Cell>
                             <Table.Cell>
                                 <Icon name='checkmark' />
                                 Done
@@ -80,41 +65,78 @@ export default class Dashboard extends Component {
                                   </Label>
                             </Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row >
                             <Table.Cell>
                                 <Header as='h4' image>
-                                    <Image src='https://react.semantic-ui.com/images/avatar/small/matthew.png' rounded size='mini' />
+                                <Icon name='trash' />
                                     <Header.Content>
-                                        Matthew
-              <Header.Subheader>Fabric Design</Header.Subheader>
+                                        Roskia Kurvissa
+              <Header.Subheader>Metroasemalla roskattu</Header.Subheader>
                                     </Header.Content>
                                 </Header>
                             </Table.Cell>
-                            <Table.Cell>15</Table.Cell>
+                            <Table.Cell>
+                                Vapun jälkeinen sotkuisuus kaduilla
+                            </Table.Cell>
+                            <Table.Cell>03.05.2019</Table.Cell>
+                            <Table.Cell>
+                                    <Icon name='question circle' />
+                                Started
+                             </Table.Cell>
+                            <Table.Cell>
+                                <Label color='green' horizontal>
+                                    Low
+                                  </Label>
+                            </Table.Cell>
+                        </Table.Row>
+                        <Table.Row >
+                            <Table.Cell>
+                                <Header as='h4' image>
+                                <Icon name='hospital' />
+                                    <Header.Content>
+                                    Marian sairaala
+              <Header.Subheader>Vesivahinko</Header.Subheader>
+                                    </Header.Content>
+                                </Header>
+                            </Table.Cell>
+                            <Table.Cell>
+                                2. kerroksessa vettä lattioilla
+                            </Table.Cell>
+                            <Table.Cell>16.08.2019</Table.Cell>
+                            <Table.Cell>
+                                <Icon name='cog' />
+                                To do
+                             </Table.Cell>
+                            <Table.Cell>
+                                <Label color='yellow' horizontal>
+                                    Medium
+                                  </Label>
+                            </Table.Cell>
                         </Table.Row>
                         <Table.Row>
                             <Table.Cell>
                                 <Header as='h4' image>
-                                    <Image src='https://react.semantic-ui.com/images/avatar/small/lindsay.png' rounded size='mini' />
+                                <Icon name='home' />
                                     <Header.Content>
-                                        Lindsay
-              <Header.Subheader>Entertainment</Header.Subheader>
+                                        Töölön lastentarha
+              <Header.Subheader>Sisäilmaongelma</Header.Subheader>
                                     </Header.Content>
                                 </Header>
                             </Table.Cell>
-                            <Table.Cell>12</Table.Cell>
-                        </Table.Row>
-                        <Table.Row>
                             <Table.Cell>
-                                <Header as='h4' image>
-                                    <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />
-                                    <Header.Content>
-                                        Mark
-              <Header.Subheader>Executive</Header.Subheader>
-                                    </Header.Content>
-                                </Header>
+                                Töölön lastentarhassa useat lapset valittaneet huonosta sisäilmasta
                             </Table.Cell>
-                            <Table.Cell>11</Table.Cell>
+                            <Table.Cell>                                12.06.2019
+</Table.Cell>
+                            <Table.Cell>
+                                <Icon name='cog' />
+                                To do
+                             </Table.Cell>
+                            <Table.Cell>
+                                <Label color='red' horizontal>
+                                    High
+                                  </Label>
+                            </Table.Cell>
                         </Table.Row>
                     </Table.Body>
                 </Table>
